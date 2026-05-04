@@ -4,38 +4,48 @@ export default function Home() {
       {/* HERO */}
       <section className="mx-auto max-w-6xl px-6 py-20 text-center">
         <h1 className="text-5xl font-bold leading-tight">
-          See How AI Bots Are Using Your Website
+          Your Website Is Being Read by AI Bots Right Now
           <span className="block text-green-400">
-            Before It Costs You Customers
+            You Just Can’t See It Yet
           </span>
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-400">
-          Track AI crawlers, ChatGPT agents, and automated bots interacting with your site —
-          in real time. No guesswork. No blind spots.
+          AgentReady shows you exactly how ChatGPT, GPTBot, and AI crawlers are
+          using your site — so you can protect content, pricing, and traffic
+          before it impacts your business.
         </p>
 
-        <div className="mt-8 flex justify-center gap-4">
+        <div className="mt-8 flex flex-wrap justify-center gap-4">
           <a
             href="https://app.agentreadyapp.io/signup"
             className="rounded bg-green-500 px-6 py-3 font-semibold text-black hover:bg-green-400"
           >
-            Start Free
+            Start Tracking AI Traffic Free
           </a>
 
           <a
             href="#how-it-works"
             className="rounded border border-slate-700 px-6 py-3 text-slate-300 hover:text-white"
           >
-            See How It Works
+            Watch How It Works
           </a>
         </div>
+
+        <p className="mt-4 text-sm text-slate-500">
+          No credit card required • Setup takes 30 seconds
+        </p>
+
+        <p className="mt-12 text-center text-sm text-slate-500">
+          Detecting traffic from GPTBot, ChatGPT-User, OpenAI agents, and more
+        </p>
       </section>
 
       {/* SOCIAL PROOF / PAIN */}
       <section className="mx-auto max-w-5xl px-6 py-16 text-center">
         <p className="text-slate-400">
-          AI systems can crawl, summarize, and reuse your content without attribution.
+          AI systems can crawl, summarize, and reuse your content without
+          attribution.
         </p>
 
         <h2 className="mt-4 text-3xl font-semibold">
@@ -91,8 +101,10 @@ export default function Home() {
           <p>3. Watch AI traffic appear instantly</p>
         </div>
 
-        <div className="mt-10 rounded bg-slate-950 p-4 text-left text-sm text-green-400">
-          {'<script src="https://app.agentreadyapp.io/agentready.js" async></script>'}
+        <div className="mt-10 overflow-x-auto rounded bg-slate-950 p-4 text-left text-sm text-green-400">
+          {
+            '<script src="https://app.agentreadyapp.io/agentready.js" async></script>'
+          }
         </div>
       </section>
 
@@ -110,7 +122,7 @@ export default function Home() {
           href="https://app.agentreadyapp.io/signup"
           className="mt-8 inline-block rounded bg-green-500 px-8 py-3 font-semibold text-black hover:bg-green-400"
         >
-          Get Started Free
+          Start Tracking Free
         </a>
       </section>
 
