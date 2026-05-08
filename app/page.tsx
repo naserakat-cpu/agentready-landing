@@ -1,6 +1,45 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
+      {/* NAVBAR */}
+      <header className="border-b border-slate-800">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+          <a href="/" className="text-lg font-bold text-white">
+            AgentReady
+          </a>
+
+          <nav className="flex items-center gap-6 text-sm">
+            <a
+              href="https://app.agentreadyapp.io/demo"
+              className="text-slate-400 transition hover:text-white"
+            >
+              Demo
+            </a>
+
+            <a
+              href="https://app.agentreadyapp.io/pricing"
+              className="text-slate-400 transition hover:text-white"
+            >
+              Pricing
+            </a>
+
+            <a
+              href="https://app.agentreadyapp.io/contact"
+              className="text-slate-400 transition hover:text-white"
+            >
+              Contact
+            </a>
+
+            <a
+              href="https://app.agentreadyapp.io/signup"
+              className="rounded-lg bg-green-500 px-4 py-2 font-semibold text-black transition hover:bg-green-400"
+            >
+              Get Started
+            </a>
+          </nav>
+        </div>
+      </header>
+
       {/* HERO */}
       <section className="mx-auto max-w-6xl px-6 py-20 text-center">
         <div className="mb-6 inline-flex rounded-full border border-green-500/30 bg-green-950/30 px-4 py-2 text-sm text-green-300">
@@ -62,9 +101,7 @@ export default function Home() {
 
         <h2 className="mt-4 text-3xl font-semibold">
           You wouldn’t ignore human traffic.
-          <span className="block text-green-400">
-            Why ignore AI traffic?
-          </span>
+          <span className="block text-green-400">Why ignore AI traffic?</span>
         </h2>
       </section>
 
@@ -178,9 +215,7 @@ export default function Home() {
 
       {/* CTA */}
       <section className="mx-auto max-w-4xl px-6 py-20 text-center">
-        <h2 className="text-3xl font-bold">
-          Start Tracking AI Traffic Today
-        </h2>
+        <h2 className="text-3xl font-bold">Start Tracking AI Traffic Today</h2>
 
         <p className="mt-4 text-slate-400">
           Free plan available. No credit card required.
@@ -200,12 +235,24 @@ export default function Home() {
           >
             View Live Demo
           </a>
+
+          <a
+            href="/contact"
+            className="rounded border border-green-700 px-8 py-3 font-semibold text-green-300 hover:border-green-500 hover:text-green-200"
+          >
+            Contact Us
+          </a>
         </div>
       </section>
 
       {/* FOOTER */}
       <footer className="border-t border-slate-800 px-6 py-6 text-center text-sm text-slate-500">
-        © {new Date().getFullYear()} AgentReady. All rights reserved.
+        <div className="flex flex-wrap items-center justify-center gap-4">
+          <span>© {new Date().getFullYear()} AgentReady. All rights reserved.</span>
+          <a href="/contact" className="hover:text-white">
+            Contact
+          </a>
+        </div>
       </footer>
     </main>
   )
