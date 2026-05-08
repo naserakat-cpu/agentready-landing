@@ -3,6 +3,10 @@ export default function Home() {
     <main className="min-h-screen bg-black text-white">
       {/* HERO */}
       <section className="mx-auto max-w-6xl px-6 py-20 text-center">
+        <div className="mb-6 inline-flex rounded-full border border-green-500/30 bg-green-950/30 px-4 py-2 text-sm text-green-300">
+          Live AI traffic visibility for your website
+        </div>
+
         <h1 className="text-5xl font-bold leading-tight">
           Your Website Is Being Read by AI Bots Right Now
           <span className="block text-green-400">
@@ -11,9 +15,9 @@ export default function Home() {
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-400">
-          AgentReady shows you exactly how ChatGPT, GPTBot, and AI crawlers are
-          using your site — so you can protect content, pricing, and traffic
-          before it impacts your business.
+          AgentReady shows you exactly how ChatGPT, GPTBot, Claude, Perplexity,
+          and AI crawlers are using your site — so you can protect content,
+          pricing, and traffic before it impacts your business.
         </p>
 
         <div className="mt-8 flex flex-wrap justify-center gap-4">
@@ -25,19 +29,27 @@ export default function Home() {
           </a>
 
           <a
+            href="https://app.agentreadyapp.io/demo"
+            className="rounded border border-green-600 px-6 py-3 font-semibold text-green-300 hover:border-green-400 hover:text-green-200"
+          >
+            View Live Demo
+          </a>
+
+          <a
             href="#how-it-works"
             className="rounded border border-slate-700 px-6 py-3 text-slate-300 hover:text-white"
           >
-            Watch How It Works
+            See How It Works
           </a>
         </div>
 
         <p className="mt-4 text-sm text-slate-500">
-          No credit card required • Setup takes 30 seconds
+          No credit card required • Setup takes minutes • Live demo available
         </p>
 
         <p className="mt-12 text-center text-sm text-slate-500">
-          Detecting traffic from GPTBot, ChatGPT-User, OpenAI agents, and more
+          Detecting traffic from GPTBot, ChatGPT-User, Claude, Perplexity,
+          OpenAI agents, and more
         </p>
       </section>
 
@@ -54,6 +66,56 @@ export default function Home() {
             Why ignore AI traffic?
           </span>
         </h2>
+      </section>
+
+      {/* LIVE DEMO TEASER */}
+      <section className="mx-auto max-w-6xl px-6 py-16">
+        <div className="rounded-2xl border border-green-700 bg-green-950/20 p-8">
+          <div className="grid gap-8 md:grid-cols-2 md:items-center">
+            <div>
+              <p className="text-sm font-semibold text-green-400">
+                SEE IT BEFORE YOU INSTALL
+              </p>
+
+              <h2 className="mt-3 text-3xl font-bold">
+                Explore a live sample dashboard first
+              </h2>
+
+              <p className="mt-4 text-slate-300">
+                View sample AI traffic hitting pricing, demo, contact, and API
+                pages. See the Revenue Exposure Report before connecting your
+                own website.
+              </p>
+
+              <a
+                href="https://app.agentreadyapp.io/demo"
+                className="mt-6 inline-block rounded bg-green-500 px-5 py-3 font-semibold text-black hover:bg-green-400"
+              >
+                Open Live Demo
+              </a>
+            </div>
+
+            <div className="rounded-xl border border-slate-800 bg-black p-5">
+              <div className="grid grid-cols-2 gap-3">
+                <MiniStat label="AI Sessions" value="42" />
+                <MiniStat label="Risk Score" value="9/10" danger />
+                <MiniStat label="High-Value URLs" value="4" warning />
+                <MiniStat label="Top Vendor" value="ChatGPT" />
+              </div>
+
+              <div className="mt-4 rounded-lg border border-red-800 bg-red-950/20 p-4">
+                <p className="text-sm font-semibold text-red-300">
+                  Active Revenue Exposure Detected
+                </p>
+
+                <p className="mt-2 text-xs text-slate-400">
+                  AI systems accessed pricing, demo, contact, and quote-related
+                  pages.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* FEATURES */}
@@ -73,12 +135,12 @@ export default function Home() {
               desc: 'See which pages AI systems are reading and scraping.',
             },
             {
-              title: 'AI Vendor Detection',
-              desc: 'Identify ChatGPT, GPTBot, Claude, and other AI agents.',
+              title: 'Revenue Exposure',
+              desc: 'Identify pricing, contact, demo, quote, and API pages accessed by AI traffic.',
             },
-          ].map((f, i) => (
+          ].map((f) => (
             <div
-              key={i}
+              key={f.title}
               className="rounded-xl border border-slate-800 bg-slate-900 p-6"
             >
               <h3 className="text-lg font-semibold text-white">{f.title}</h3>
@@ -93,12 +155,18 @@ export default function Home() {
         id="how-it-works"
         className="mx-auto max-w-4xl px-6 py-20 text-center"
       >
-        <h2 className="text-3xl font-bold">Setup in 30 Seconds</h2>
+        <h2 className="text-3xl font-bold">Setup in Minutes</h2>
+
+        <p className="mx-auto mt-4 max-w-2xl text-slate-400">
+          AgentReady guides you by website platform, including WordPress,
+          Shopify, Wix, Squarespace, Webflow, and custom websites.
+        </p>
 
         <div className="mt-10 space-y-4 text-slate-400">
-          <p>1. Copy a single tracking script</p>
-          <p>2. Paste it into your website</p>
-          <p>3. Watch AI traffic appear instantly</p>
+          <p>1. Add your website domain</p>
+          <p>2. Choose your website platform</p>
+          <p>3. Install one lightweight tracking script</p>
+          <p>4. Watch AI traffic appear in your dashboard</p>
         </div>
 
         <div className="mt-10 overflow-x-auto rounded bg-slate-950 p-4 text-left text-sm text-green-400">
@@ -118,12 +186,21 @@ export default function Home() {
           Free plan available. No credit card required.
         </p>
 
-        <a
-          href="https://app.agentreadyapp.io/signup"
-          className="mt-8 inline-block rounded bg-green-500 px-8 py-3 font-semibold text-black hover:bg-green-400"
-        >
-          Start Tracking Free
-        </a>
+        <div className="mt-8 flex flex-wrap justify-center gap-4">
+          <a
+            href="https://app.agentreadyapp.io/signup"
+            className="rounded bg-green-500 px-8 py-3 font-semibold text-black hover:bg-green-400"
+          >
+            Start Tracking Free
+          </a>
+
+          <a
+            href="https://app.agentreadyapp.io/demo"
+            className="rounded border border-slate-700 px-8 py-3 font-semibold text-white hover:border-slate-500"
+          >
+            View Live Demo
+          </a>
+        </div>
       </section>
 
       {/* FOOTER */}
@@ -131,5 +208,30 @@ export default function Home() {
         © {new Date().getFullYear()} AgentReady. All rights reserved.
       </footer>
     </main>
+  )
+}
+
+function MiniStat({
+  label,
+  value,
+  danger,
+  warning,
+}: {
+  label: string
+  value: string
+  danger?: boolean
+  warning?: boolean
+}) {
+  const color = danger
+    ? 'text-red-400'
+    : warning
+      ? 'text-yellow-400'
+      : 'text-white'
+
+  return (
+    <div className="rounded-lg border border-slate-800 bg-slate-950 p-4">
+      <p className="text-xs text-slate-500">{label}</p>
+      <p className={`mt-2 text-xl font-bold ${color}`}>{value}</p>
+    </div>
   )
 }
