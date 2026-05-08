@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: '/og-image.png',
+        url: '/og-image-v2.png',
         width: 1200,
         height: 630,
         alt: 'AgentReady AI Traffic Dashboard',
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     description:
       'Track ChatGPT, Claude, GPTBot, and AI crawler activity hitting your website in real time.',
 
-    images: ['/og-image.png'],
+    images: ['/og-image-v2.png'],
   },
 
   icons: {
