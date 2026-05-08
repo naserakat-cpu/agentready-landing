@@ -237,7 +237,7 @@ export default function Home() {
           </a>
 
           <a
-            href="/contact"
+            href="https://app.agentreadyapp.io/contact"
             className="rounded border border-green-700 px-8 py-3 font-semibold text-green-300 hover:border-green-500 hover:text-green-200"
           >
             Contact Us
